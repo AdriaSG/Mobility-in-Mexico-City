@@ -1,29 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap" rel="stylesheet">
     <style>
-        body { background-image: linear-gradient(45deg, #616092, rgb(255, 122, 89)); }
+        body { background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+            linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+            linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
+            min-height: 100vh;
+        # background-image: linear-gradient(45deg, #616092, rgb(255, 122, 89));
+         text-align: center;
+         letter-spacing: 1px;
+         line-height: 2.5;
+         color: #3f3b3b;
+         font-family: 'Fira Sans', sans-serif;}
     </style>
     <meta charset="UTF-8">
     <title>Mobility Analysis Tool</title>
-    <script>
-    $(function(){
-      $("#includedContent").load("Mobility_paths.html");
-    });
-</script>
 
 </head>
 <body>
-Demo Maps available <br>
-Public Transport Map <br>
-Traffic during the day <br>
-<a href="file:///Users/adrsanchez/PycharmProjects/Mobility-in-Mexico-City/datasets/Mobility_paths.html">
-   Mobility Paths </a>
+<br>
+    <h1>Mobility Analysis Tool</h1>
+    <h2> Demo Maps Mexico City </h2>
 
+    <a href="/Mobility-in-Mexico-City/src/maps/Public_transport.html"> Public Transport Map <br></a>
 
-Other features <br>
-Calculate Centroids,
-Cluster Polygons
+    <a href="/Mobility-in-Mexico-City/src/maps/Traffic_by_hour.html"> Traffic during the day <br></a>
+
+    <a href="/Mobility-in-Mexico-City/src/maps/Mobility_paths.html"> Mobility Paths <br></a>
+
+    <h2>Other features<br></h2>
+    Calculate Centroids,
+    Cluster Polygons <br>
 
 </body>
 </html>
