@@ -44,9 +44,6 @@ def calculate_centroids(mapa):
     print (df_mapa.head(5))
     return (df_mapa)
 
-
-
-
 url = "/Users/adrsanchez/PycharmProjects/Mobility-in-Mexico-City/datasets/mexico_city_agebs.json"
 mapa = get_file(url)
 calculate_centroids(mapa)
