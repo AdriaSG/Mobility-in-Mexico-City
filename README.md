@@ -19,6 +19,7 @@ For the UML digramas I chose to present the following:
 For the [Domain Driven Design diagram](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/DDD%20-%20Urban%20Mobility%20app.png), I had sketched what would be the complete problem space for the application as starting point while drafting the general goal of the application. There could be found several different subdomains, components and features that either had been implemented or would be implemented in the future to deliver promised value to the end-user. The DDD diagramp is also mapping the up and downstream relations as well as key partnetships for the application to work properly. Furthermore I had created an small [glossary](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Glossary.md) containing ubiquitous language for each domain, this would allow a better understanding of the architecture and code.
 
 ## 4 Metrics
+For metrics, I chose Sonarqube online version because it's much easier to integrate with your repository that running a local server. In general the code looks good, there were found lot of duplications because the html maps contains fixed data inside that might be counted as duplicates, to avoid this warning false positives rule could be set up. Please fin screenshot [here]()
 
 ## 5 Clean Code Development
 
