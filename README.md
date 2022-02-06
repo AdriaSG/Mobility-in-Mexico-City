@@ -24,7 +24,7 @@ For metrics, I chose Sonarqube online version because it's much easier to integr
 ## 5 Clean Code Development
 
 ## 6 Build Management
-For build management I had used pybuilder, which is a powerfultool when using python. You can fin 3 files created for this purpose:
+For build management I had used pybuilder, which is a powerful tool when using python. You can fin 3 files created for this purpose:
 - [build.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/build.py)
 - [setup.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/setup.py)
 - [pyproject.tolm](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/pyproject.toml)
