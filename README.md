@@ -3,11 +3,11 @@
 This application is the demo por a geospatial analysis tool applied to data from Mexico City. The website allows user to interact with 3 main maps: 1) Public transport: user can see subway, bus and bicycle stations as well as bicycle lanes, 2) Traffic during the day: showing aggregated data from Uber Q1 2020 to visualize traffic density in the city along the day and 3) Mobility Paths: where user visulizes most traveled paths across clutered districs in the city. All maps are interactive but with static data. 
 
 If I would get Edlich's investment, the application would grow an duser will be able to create their on maps adding different layers, filters and slicers to be complete visualization tool for urban data. 
-###Prerequisites
+### Prerequisites
 Pandas
 Shapely 
 Kepler gl
-###Handling 
+
 
 ## 2 UML
 ## 3 DDD 
