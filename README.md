@@ -32,6 +32,17 @@ For build management I had used pybuilder, which is a powerful tool when using p
 ## 7 Unit-Tests
 
 ## 8 Continuous Delivery
+I used Git Actions to create the continious delivery pipeline (could be found [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/.github/workflows/python-app.yml) by default the workflow buils the following tasks:
+
+- set up ubuntu environment
+- set up Python with Version 3.8
+- installs or upgrades pip
+- installs or upgrades flake8
+- installs (if provided) the requirements.txt
+- checks if there are syntax errors in python
+- run unit tests
+
+I also tried to use TravisCI to explore the tool, however I got the error "We are unable to start your build at this time. You exceeded the number of users allowed for your plan. Please review your plan details and follow the steps to resolution." which I was unable to resolve yet. 
 
 ## 9 IDE
 I had used [PyCharm 2021.3.2 (Community Edition)](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/PyCharm_asIDE.png) using Anaconda Python 3.8 as interpreter. I find very useful to use it this way for an easier environment and package management even if I deside to use other tools like Jupyter Notebook or Google collab, Anaconda as interpreter will save time not having to install save packages everywhere. The integration with Git using this IDE was straight forward and I was able to commit, pull and push updates without facing an issue, would be interesting to start trying it with multiple branches for more complex project.
