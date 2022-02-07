@@ -62,5 +62,6 @@ Another feature I like very much about this IDE, is the new package manager for 
 Out of curiosity, full short-cut list could be found [here](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf)
 
 ## 10 DSL
+To put DSL in practice I created an small habits tracker where you can write in minutes and hours how much time you spent in different activities with natural language, then functions will summmarize the time per activity and show the results in hours. Find [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/habits_tckr.dsl) the .dsl file and [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/dsl_interpreter.py) the interpreter, you just have to run dsl file from console with given python interpreter.
 
 ## 11 Functional Programming
