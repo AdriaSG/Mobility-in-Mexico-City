@@ -29,10 +29,12 @@ For build management I had used pybuilder, which is a powerful tool when using p
 - [setup.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/setup.py)
 - [pyproject.tolm](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/pyproject.toml)
 
+After configured the files, if I run pyb from cmd the [build start running](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Buildpy_screenshot_screenshot.png)
+
 ## 7 Unit-Tests
 
 ## 8 Continuous Delivery
-I used Git Actions to create the continious delivery pipeline (could be found [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/.github/workflows/python-app.yml) by default the workflow buils the following tasks:
+I used Git Actions to create the continious delivery pipeline (file found [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/.github/workflows/python-app.yml) and screenshot of sucessful integration [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/CDransuccessfully_screenshot.png) by default the workflow builds the following tasks:
 
 - set up ubuntu environment
 - set up Python with Version 3.8
