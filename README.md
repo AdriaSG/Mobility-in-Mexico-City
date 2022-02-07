@@ -8,10 +8,7 @@ If I would get Edlich's investment, the application would grow an duser will be 
 <img width="450" height="280" alt="Screen Shot 2022-02-07 at 14 43 46" src="https://user-images.githubusercontent.com/73482871/152799461-be026b29-e514-46d8-9904-267e5302ae16.png">
 <img width="450" height="280" alt="Screen Shot 2022-02-07 at 14 39 08" src="https://user-images.githubusercontent.com/73482871/152798905-4e9a47b3-4323-41d7-8954-f94df5671b2e.png">
 
-### Prerequisites
-Pandas
-Shapely 
-Kepler gl
+Find list of requierements [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/requirements.txt)
 
 
 ## 2 Unified Model Language
