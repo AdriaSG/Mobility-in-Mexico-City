@@ -13,8 +13,8 @@ HTMLParser==0.0.2
 Image==1.5.33
 ipython==8.0.1
 ipywidgets==7.6.5
-Jinja2==3.0.3
-jnius==1.1.0
+#Jinja2==3.0.3
+#jnius==1.1.0
 lockfile==0.12.2
 lxml==4.7.1
 matplotlib==3.4.2

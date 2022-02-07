@@ -1,7 +1,7 @@
 > Note that '>' is used for commenting.
 
 > I created a quick list of habits during the week written as you would usually do, at the end of the week
-> you would know how much time you spend in each activity withou taking care of the addition but just asking per
+> you would know how much time you spend in each activity without taking care of the addition but just asking per
 > activity name. Let's take a look of last week:
 
 > Monday
