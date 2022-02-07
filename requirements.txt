@@ -2,7 +2,6 @@ brotli==1.0.9
 cmarkgfm==0.7.0
 ConfigParser==5.2.0
 cryptography==36.0.1
-Cython==0.29.27
 disco==1.40.4
 Django==4.0.2
 dl==0.1.0
