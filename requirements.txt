@@ -15,7 +15,6 @@ ipywidgets==7.6.5
 #Jinja2==3.0.3
 #jnius==1.1.0
 lockfile==0.12.2
-lxml==4.7.1
 matplotlib==3.4.2
 ordereddict==1.1
 ox_profile==0.2.6
