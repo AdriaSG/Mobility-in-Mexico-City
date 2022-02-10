@@ -4,6 +4,9 @@ import geopandas as gpd
 from shapely import wkt
 
 #Get file
+# Functional Programming:
+# Only final data structures are used. Here, the initial object mapa instead of bein overwritten it gets copied in to a new variable
+# "df_mapa" and transformed a pandas DataFrame type. I avoided re-assignation to ensure only final data structures
 url = "/Users/adrsanchez/PycharmProjects/Mobility-in-Mexico-City/datasets/mexico_city_agebs.json"
 def get_file(url):
     """This function will get the json file, and return a dataframe object named df_mapa"""
