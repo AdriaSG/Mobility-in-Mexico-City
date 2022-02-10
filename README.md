@@ -21,7 +21,7 @@ For the UML digramas I chose to present the following:
 For the [Domain Driven Design diagram](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/DDD%20-%20Urban%20Mobility%20app.png), I had sketched what would be the complete problem space for the application as starting point while drafting the general goal of the application. There could be found several different subdomains, components and features that either had been implemented or would be implemented in the future to deliver promised value to the end-user. The DDD diagramp is also mapping the up and downstream relations as well as key partnetships for the application to work properly. Furthermore I had created an small [glossary](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Glossary.md) containing ubiquitous language for each domain, this would allow a better understanding of the architecture and code.
 
 ## Metrics
-For metrics, I chose Sonarqube online version because it's much easier to integrate with your repository that running a local server. In general the code looks good, there were found lot of duplications because the html maps contains fixed data inside that might be counted as duplicates, to avoid this warning false positives rule could be set up. Please find screenshot [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Sonarcloud_screenshot.png)
+For metrics, I chose Sonarqube online version because it's much easier to integrate with your repository that running a local server. In general the code looks good, there were found lot of duplications because the html maps contains fixed data inside that might be counted as duplicates, to avoid this warning false positives rule could be set up. Please find screenshot [here.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Sonarcloud_screenshot.png)
 
 And I also added some badges:
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=AdriaSG_Mobility-in-Mexico-City&metric=bugs)](https://sonarcloud.io/summary/new_code?id=AdriaSG_Mobility-in-Mexico-City)
@@ -29,6 +29,7 @@ And I also added some badges:
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=AdriaSG_Mobility-in-Mexico-City&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=AdriaSG_Mobility-in-Mexico-City)
 
 ## Clean Code Development
+Please fin my personal Cheat Sheer [here.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Clean%20Code%20Development%20CheatSheet_Urban%20Mobility%20app.png)
 
 ## Build Management
 For build management I had used pybuilder, which is a powerful tool when using python. You can fin 3 files created for this purpose:
@@ -66,4 +67,10 @@ Out of curiosity, full short-cut list could be found [here](https://resources.je
 ## DSL
 To put DSL in practice I created an small habits tracker where you can write in minutes and hours how much time you spent in different activities with natural language, then functions will summmarize the time per activity and show the results in hours. Find [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/habits_tckr.dsl) the .dsl file and [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/dsl_interpreter.py) the interpreter, you just have to run dsl file from console with given python interpreter.
 
-## Functional Programming
+## Functional Programming 
+I have tried to use all the aspectof FP throughout my code, find a few examples in following links as comments at the end of the code:
+- only final data structures [calculate_centroids.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/calculate_centroids.py)
+- (mostly) side effect free functions
+- the use of higher-order functions
+- functions as parameters and return values
+- use closures / anonymous functions [calculate_centroids.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/calculate_centroids.py)
