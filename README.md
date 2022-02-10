@@ -29,7 +29,7 @@ And I also added some badges:
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=AdriaSG_Mobility-in-Mexico-City&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=AdriaSG_Mobility-in-Mexico-City)
 
 ## Clean Code Development
-Please fin my personal Cheat Sheer [here.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Clean%20Code%20Development%20CheatSheet_Urban%20Mobility%20app.png)
+I had created my persona [Cheat Sheet.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Clean%20Code%20Development%20CheatSheet_Urban%20Mobility%20app.png)
 
 ## Build Management
 For build management I had used pybuilder, which is a powerful tool when using python. You can fin 3 files created for this purpose:
@@ -65,7 +65,7 @@ Another feature I like very much about this IDE, is the new package manager for 
 Out of curiosity, full short-cut list could be found [here](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf)
 
 ## DSL
-To put DSL in practice I created an small habits tracker where you can write in minutes and hours how much time you spent in different activities with natural language, then functions will summmarize the time per activity and show the results in hours. Find [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/habits_tckr.dsl) the .dsl file and [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/dsl_interpreter.py) the interpreter, you just have to run dsl file from console with given python interpreter.
+To put DSL in practice I created an small habits tracker where you can write in minutes and hours how much time you spent in different activities with natural language, then functions will summmarize the time per activity and show the results in hours. Find [the .dsl file](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/habits_tckr.dsl) along with [the interpreter](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/dsl_interpreter.py), you just have to run the dsl file from console with given python interpreter.
 
 ## Functional Programming 
 I have tried to use all the aspectof FP throughout my code, find a few examples in following links as comments at the end of the code:
