@@ -3,17 +3,14 @@ import pandas as pd
 import geopandas as gpd
 from shapely import wkt
 
+
 #Get file
-# Functional Programming:
-# Only final data structures are used. Here, the initial object mapa instead of bein overwritten it gets copied in to a new variable
-# "df_mapa" and transformed a pandas DataFrame type. I avoided re-assignation to ensure only final data structures
 url = "/Users/adrsanchez/PycharmProjects/Mobility-in-Mexico-City/datasets/mexico_city_agebs.json"
-def get_file(url):
+def get_json_file(url):
     """This function will get the json file, and return a dataframe object named df_mapa"""
     if url.lower().endswith(('.json')):
         mapa = gpd.read_file(url)
         print("File loaded successfully")
-        print(mapa.crs)
         df_mapa = pd.DataFrame(mapa)
         if df_mapa.shape == (0, 0):
             print("File is empty")
@@ -23,40 +20,39 @@ def get_file(url):
         print("File must be .json")
     return(df_mapa)
 
-df_mapa = (get_file(url))
+df_mapa = get_json_file(url)
 
-def calculate_centroids(df_mapa):
+def get_centroids(df):
     """
     This function gets a geojson file without centroids and returns a dataframe with long and lat centroid coordinates.
     The file must contain polygon data named 'geometry' in order to calculate centroid.
     """
-    # Create a list of strings (each is a polygon)
     df_mapa_centroids = df_mapa
     polygons = df_mapa_centroids['geometry'].astype(str)
-    # Calculate centroids of each polygon and save them in to a list
     centroid = list()
     for i in polygons:
         temp_pol = wkt.loads(i)
         centroid.append(temp_pol.centroid.wkt)
     df_mapa_centroids['Centroid'] = centroid
-    # Clean file
-    df_mapa_centroids= df_mapa_centroids.drop(['CVE_AGEB', 'CVE_MUN', 'CVE_LOC', 'CVE_ENT', 'DISPLAY_NAME'], axis=1)
-    # Add centroids in lat and long format
+    df_mapa_centroids = df_mapa_centroids.drop(['CVE_AGEB', 'CVE_MUN', 'CVE_LOC', 'CVE_ENT', 'DISPLAY_NAME'], axis=1)
     lat = list()
     lon = list()
     for c in centroid:
         cen = c.split(" ")
-        lon_temp = cen[1].replace('(', '')
-        lat_temp = cen[2].replace(')', '')
-        lat_temp = float(lat_temp)
-        lon_temp = float(lon_temp)
-        lat.append(round(lat_temp, 5))
-        lon.append(round(lon_temp, 5))
-    df_mapa_centroids['Centroid Lat'] = lat
-    df_mapa_centroids['Centroid Lon'] = lon
-    print ("Your file had been processed successfully. Your new dataset looks like:")
-    print (df_mapa_centroids.head(5))
-    return (df_mapa_centroids)
+        lat.append((lambda lat_temp: round(float(lat_temp), 5))(lat_temp=cen[1].replace('(', '')))
+        lon.append((lambda lon_temp: round(float(lon_temp), 5))(lon_temp=cen[1].replace('(', '')))
+    df_mapa_centroids['cen_lat'] = lat
+    df_mapa_centroids['cen_lon'] = lon
+    print("Your file had been processed successfully. Your new dataset looks like:")
+    print(df_mapa_centroids.head(5))
 
-calculate_centroids(df_mapa)
+get_centroids(df_mapa)
 
+#
+# Functional Programming:
+# 1. Only final data structures are used: Here in the function get_json_file, the initial object named "mapa", instead of being overwritten, it gets copied in to a new
+# variable named "df_mapa". This variable also transform object into a pandas DataFrame type. I avoided re-assignation to ensure only final
+# data structures.
+#
+# 2. Using anonymous functions: In the second function get_centroids, the correction of format variables (being float numbers with just 5 decimals) has been done using
+# a lambda function. Lambda functions are specially useful when they are needed just for a short period of time, as benefit the code gets shorter and readable.
