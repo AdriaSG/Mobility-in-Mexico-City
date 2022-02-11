@@ -1,7 +1,7 @@
 from keplergl_cli import Visualize
 mapbox_apikey = "pk.eyJ1IjoiYWRyaWFuYXNnIiwiYSI6ImNreW5nOWZiNDAzZGMyb24ybnZtNmhsOWoifQ.Y4VsqsgJXoA6CCGt_Cdk0Q"
 
-def create_new_map(key):
+def render_new_map(key):
     """
     This function renders kepler.gl widget with an empty map, the mapbox API key is personal
     """
