@@ -9,4 +9,9 @@ def render_new_map(key):
     html_path = vis.render(open_browser=True, read_only=False)
     return html_path
 
-create_new_map(mapbox_apikey)
+#
+# Functional programming
+# Above function is an example of side-effect-free function, it is working only with their own variables
+# which they are not changed, we must be able to call this function anytime and be sure that it won't interfere
+# with other functionalities in the tool.
+#

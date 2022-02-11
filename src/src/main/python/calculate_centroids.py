@@ -54,3 +54,5 @@ get_centroids(get_json_file(url))
 #
 # 2. Using anonymous functions: In the second function get_centroids, the correction of format variables (being float numbers with just 5 decimals) has been done using
 # a lambda function. Lambda functions are specially useful when they are needed just for a short period of time, as benefit the code gets shorter and readable.
+#
+# 3. Functions as parameters. An example of this is how we call the function names get_centroids using the other function get_json_file as paramater.

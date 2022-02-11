@@ -12,7 +12,7 @@ Find list of requierements [here](https://github.com/AdriaSG/Mobility-in-Mexico-
 
 
 ## Unified Model Language
-For the UML digramas I chose to present the following:
+For the UML diagrams I chose to present the following:
 1. [Use Case diagram.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Use%20case%20diagram%20-%20Urban%20Technology%20app.png) Extending the cases to the functionalities that I would include later in the web-tool.
 2. [Activity diagram.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Activity%20diagram%20-%20Urban%20Mobility%20app.png) Walks through the main activities that could be done in the complete idea of the tool.
 3. [Sequence diagram.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Sequence%20diagram%20-%20Urban%20Mobility%20app.png) Shows interactions (calls and responses) between main components and the user. 
@@ -68,9 +68,8 @@ Out of curiosity, full short-cut list could be found [here](https://resources.je
 To put DSL in practice I created an small habits tracker where you can write in minutes and hours how much time you spent in different activities with natural language, then functions will summmarize the time per activity and show the results in hours. Find [the .dsl file](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/habits_tckr.dsl) along with [the interpreter](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/dsl_interpreter.py), you just have to run the dsl file from console with given python interpreter.
 
 ## Functional Programming 
-I have tried to use all the aspectof FP throughout my code, find a few examples in following links as comments at the end of the code:
-- only final data structures [calculate_centroids.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/calculate_centroids.py)
-- (mostly) side effect free functions
-- the use of higher-order functions
-- functions as parameters and return values
-- use closures / anonymous functions [calculate_centroids.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/calculate_centroids.py)
+I have tried to use almost all the aspects of FP throughout my code, find a few examples in following links as comments at the end of the code:
+- only final data structures [calculate_centroids.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/src/main/python/calculate_centroids.py)
+- (mostly) side effect free functions [create_new_map.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/src/main/python/create_new_map.py)
+- functions as parameters and return values [calculate_centroids.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/src/main/python/calculate_centroids.py)
+- use closures / anonymous functions [calculate_centroids.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/src/main/python/calculate_centroids.py)
