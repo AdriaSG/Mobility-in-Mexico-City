@@ -39,8 +39,6 @@ For build management I had used pybuilder, which is a powerful tool when using p
 
 After configured the files, if I run pyb from cmd the [build start running](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Buildpy_screenshot_screenshot.png)
 
-## Unit-Tests
-
 ## Continuous Delivery
 I used Git Actions to create the continious delivery pipeline (file found [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/.github/workflows/python-app.yml)) and screenshot of sucessful integration [here](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/CDransuccessfully_screenshot.png); by default the workflow builds the following tasks:
 
@@ -50,7 +48,6 @@ I used Git Actions to create the continious delivery pipeline (file found [here]
 - installs or upgrades flake8
 - installs (if provided) the requirements.txt
 - checks if there are syntax errors in python
-- run unit tests
 
 I also tried to use TravisCI to explore the tool, however I got the error "We are unable to start your build at this time. You exceeded the number of users allowed for your plan. Please review your plan details and follow the steps to resolution." which I was unable to resolve yet. 
 
