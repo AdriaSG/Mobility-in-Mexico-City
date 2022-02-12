@@ -30,7 +30,10 @@ And I also added some badges:
 
 ## Clean Code Development
 I had created my persona [Cheat Sheet.](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/Clean%20Code%20Development%20CheatSheet_Urban%20Mobility%20app.png)
-
+Follow examples of the implementation of clean code development:
+- Naming. All the names of the files, classes and functions are very descriptive. For example, when you look in to the render_map function you can immediately understand what is it doing, that's the case also for all the variables as well.
+- Comments. I also added short comments through the code so anybody could understand it. The code itself could be almost readable as English.
+- In the function cluster_polygons, for the parameters of the figure
 ## Build Management
 For build management I had used pybuilder, which is a powerful tool when using python. You can fin 3 files created for this purpose:
 - [build.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/build.py)
@@ -62,7 +65,7 @@ Another feature I like very much about this IDE, is the new package manager for 
 Out of curiosity, full short-cut list could be found [here](https://resources.jetbrains.com/storage/products/pycharm/docs/PyCharm_ReferenceCard.pdf)
 
 ## DSL
-To put DSL in practice I created an small habits tracker where you can write in minutes and hours how much time you spent in different activities with natural language, then functions will summmarize the time per activity and show the results in hours. Find [the .dsl file](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/habits_tckr.dsl) along with [the interpreter](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/dsl_interpreter.py), you just have to run the dsl file from console with given python interpreter.
+To put DSL in practice I created a small habits tracker where you can write in minutes and hours how much time you spent in different activities with natural language, then functions will summmarize the time per activity and show the results in hours. Find [the .dsl file](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/habits_tckr.dsl) along with [the interpreter](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/tasks/dsl_interpreter.py), you just have to run the dsl file from console with given python interpreter.
 
 ## Functional Programming 
 I have tried to use almost all the aspects of FP throughout my code, find a few examples in following links as comments at the end of the code:

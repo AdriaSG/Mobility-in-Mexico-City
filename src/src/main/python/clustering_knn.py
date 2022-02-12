@@ -23,8 +23,15 @@ def cluster_polygons (polygons, k):
     print("Your input had been clustered:", polygons_cl.head(3))
     print("Your clusters looks like this:")
     labels = polygons_cl['cluster_label']  # Labels of each point
-    polygons_cl.plot.scatter(x='Centroid Lat', y='Centroid Lon', c=labels, s=50, cmap='twilight')
-    plt.scatter(centers[:, 0], centers[:, 1], c='black', s=100, alpha=0.3),
+    polygons_cl.plot.scatter(x='Centroid Lat',
+                             y='Centroid Lon',
+                             c=labels,
+                             s=50, cmap='twilight')
+    plt.scatter(centers[:, 0],
+                centers[:, 1],
+                c='black',
+                s=100,
+                alpha=0.3),
     plt.xlabel("Latitude"),
     plt.ylabel("Longitude")
     plt.show()
