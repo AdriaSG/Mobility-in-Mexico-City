@@ -34,7 +34,8 @@ I had created my persona [Cheat Sheet.](https://github.com/AdriaSG/Mobility-in-M
 Follow examples of the implementation of clean code development:
 - Naming. All the names of the files, classes and functions are very descriptive. For example, when you look in to the render_map function you can immediately understand what is it doing, that's the case also for all the variables as well.
 - Comments. I also added short comments through the code so anybody could understand it. The code itself could be almost readable as English.
-- In the function cluster_polygons, for the parameters of the figure
+- In the function cluster_polygons, for the parameters of the figure are given in different lines so it could be changes or commented easily. 
+
 ## Build Management
 For build management I had used pybuilder, which is a powerful tool when using python. You can fin 3 files created for this purpose:
 - [build.py](https://github.com/AdriaSG/Mobility-in-Mexico-City/blob/main/src/build.py)
